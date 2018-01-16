@@ -1,0 +1,162 @@
+@charset "UTF-8";
+ 
+/****四则运算题目表格(<table>)****/
+.box{
+	margin-top: 50px;
+}
+/****结果输入框(<input>)****/
+.result{
+	width: 60px;
+	padding: 5px;
+	border:none;
+	font-size:20px;
+	border-bottom: solid #d8d8d8 4px;
+	text-align:center;
+	background: none;
+}
+.result:focus{
+	position: relative;
+	border: dashed aliceblue;
+}
+/****题目(<td>)****/
+.expr{
+	font-size: x-large;
+	position: relative;
+}
+
+
+/****非分数/运算符(<div>)*****/
+.nomal{
+	text-align:center;
+	float:left;
+	position: relative;
+	top: 16px;
+	margin-left: 3px;
+	margin-right: 3px;
+	/*width:20px;*/
+}
+
+/****分数(<div>)****/
+.fraction{
+	text-align:center;
+	float: left;
+	margin-left:3px;
+	margin-right: 3px;
+	/*width="20px";*/
+}
+
+
+/*****提交、答题按钮*****/
+.submit{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	background: cornflowerblue;
+	border: none;
+	cursor: pointer;
+	color:lightyellow;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+}
+.submit:hover{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.submit:active{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/******计时器*******/
+.timer{
+	position:fixed;
+	top: 10px;
+	right: 100px;
+	border: none;
+	width:100px;
+	text-align: right;
+	background: none;
+	font-size:30px;
+	color:#ddd999;
+}
+.pause{
+	position:fixed;
+	top: 30px;
+	right: 10px;
+}
+/****题目选项****/
+.option{
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+	margin-top: 130px;
+	border:dashed #9ACD32 2px;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+/*****题目背景******/
+.background{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****2/3元运算单选钮***/
+.elementNumChecked{
+	background-color: #6495ED;
+	cursor: pointer;
+	padding: 5px;
+	border: solid black 2px;
+	margin-left: -6px;
+}
+.elementNumUnChecked{
+	background:none;
+	cursor: pointer;
+	padding: 5px;
+	border: solid black 2px;
+	margin-left: -6px;
+}
+.elementNumUnChecked:hover{
+	background-color:rgba(100,149,237,0.3);
+}
+#elementNum input{
+	display: none;
+}
+/*****准备提示框*****/
+#ready{
+	width: 46%;
+	height: 395px;
+	position: fixed;
+	left: 27%;
+	background-color: #ffffff;
+	top: 125px;
+	font-family: 方正卡通简体;
+	text-align: center;
+}
+/*****遮盖层*****/
+#cover{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	top: 0px;
+}
+/*****暂停按钮****/
+#pause{
+	position: fixed;
+	right: 10px;
+	top:10px;
+	color:white;
+	cursor:pointer;
+}
